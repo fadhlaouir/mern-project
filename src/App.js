@@ -1,7 +1,15 @@
 import React from 'react';
-import {BrowserRouter} from 'react-router-dom'
+import {BrowserRouter as Router, Route} from 'react-router-dom'
+import Users from './user/pages/Users'
+
 const App = () => {
-  return <h1>Let's start!</h1>;
+  return (
+    <Router>
+      <Route exact path="/">
+        <Users />
+      </Route>
+  </Router>
+  )
 }
 
 export default App;
